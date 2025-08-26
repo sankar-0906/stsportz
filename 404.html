@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found - ST Sportz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; }
+        .notfound-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .notfound-logo {
+            max-width: 180px;
+            margin-bottom: 2rem;
+        }
+        .notfound-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #dc2626;
+            margin-bottom: 1rem;
+        }
+        .notfound-message {
+            font-size: 1.2rem;
+            color: #6b7280;
+            margin-bottom: 2rem;
+        }
+        .notfound-btn {
+            display: inline-block;
+            padding: 12px 32px;
+            background: #dc2626;
+            color: #fff;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        .notfound-btn:hover {
+            background: #b91c1c;
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            window.location.href = '/';
+        }, 3000);
+    </script>
+</head>
+<body>
+    <div class="notfound-container">
+        <img src="images/optimized/PNG/LOGO/Red-black.png" alt="ST Sportz Logo" class="notfound-logo">
+        <div class="notfound-title">404 - Page Not Found</div>
+        <div class="notfound-message">
+            Oops! The page you are looking for doesn't exist or has been moved.<br>
+            You will be redirected to the home page shortly.
+        </div>
+        <a href="/" class="notfound-btn">Go to Home</a>
+    </div>
+</body>
+</html> 

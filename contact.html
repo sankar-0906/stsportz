@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Contact Us - ST Sportz | Coimbatore Sports Facility</title>
+    <meta name="description" content="Contact ST Sportz for court bookings, membership enquiries, and event planning. Get in touch with Coimbatore's premier indoor sports facility.">
+    <meta name="keywords" content="contact ST Sportz, Coimbatore sports contact, court booking, membership enquiry">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Us - ST Sportz">
+    <meta property="og:description" content="Contact ST Sportz for court bookings, membership enquiries, and event planning in Coimbatore.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stsportz.com/contact.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/optimized/PNG/ICON/Red-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div id="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="images/optimized/PNG/LOGO/Red-black.png" alt="ST Sportz Logo" class="logo">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="badminton.html" class="nav-link">Badminton</a></li>
+                    <li><a href="pickleball.html" class="nav-link">Pickleball</a></li>
+                    <li><a href="membership.html" class="nav-link">Membership</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero contact-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Contact Us</h1>
+                <h2 class="hero-subtitle">Get in Touch with ST Sportz</h2>
+                <p class="hero-description">
+                    Ready to experience elite indoor sports? Contact us for court bookings, 
+                    membership enquiries, event planning, or any questions you may have.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#enquiry-form" class="btn btn-primary">Send Enquiry</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="CourtPhotos/optimized/All Courts.jpg" alt="ST Sportz Contact" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+91 89258 93094</p>
+                    <a href="tel:+918925893094" class="contact-link">Call Now</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>contactstsportz@gmail.com</p>
+                    <a href="mailto:contactstsportz@gmail.com" class="contact-link">Send Email</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Address</h3>
+                    <p>KNG Pudur Rd, KNG Pudur Pirivu, Somayampalayam, Coimbatore, Tamil Nadu 641025</p>
+                    <a href="https://g.co/kgs/YZ33TDk" target="_blank" class="contact-link">Get Directions</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Operating Hours</h3>
+                    <p>5 AM - 11 PM Daily</p>
+                    <p class="contact-note">Open all days of the week</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry Form Section -->
+    <section id="enquiry-form" class="enquiry-form">
+        <div class="container">
+            <h2 class="section-title">Send Us an Enquiry</h2>
+            <div class="form-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferred_sport">Preferred Sport *</label>
+                        <select id="preferred_sport" name="preferred_sport" required>
+                            <option value="">Select a sport</option>
+                            <option value="badminton">Badminton</option>
+                            <option value="pickleball">Pickleball</option>
+                            <option value="both">Both</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Enquiry</button>
+                </form>
+                
+                <!-- Thank You Message (Hidden by default) -->
+                <div id="thank-you-message" class="thank-you-message" style="display: none;">
+                    <div class="thank-you-content">
+                        <div class="thank-you-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Thank You!</h3>
+                        <p>Your enquiry has been submitted successfully. We will contact you shortly.</p>
+                        <button id="submit-another" class="btn btn-secondary">Submit Another Enquiry</button>
+                    </div>
+                </div>
+                
+                <div class="form-info">
+                    <h3>What happens next?</h3>
+                    <div class="info-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Submit Enquiry</h4>
+                                <p>Fill out the form with your details and requirements.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>We'll Contact You</h4>
+                                <p>Our team will get back to you within 24 hours.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Book Your Session</h4>
+                                <p>Confirm your booking and start your sports journey!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8!2d76.9558!3d11.0168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHEsDAxJzAwLjgiTiA3NsKwNTcnMjAuOCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="map-info">
+                <div class="map-details">
+                    <h3>How to Reach ST Sportz</h3>
+                    <div class="directions">
+                        <div class="direction-item">
+                            <h4><i class="fas fa-car"></i> By Car</h4>
+                            <p>Located on KNG Pudur Rd, easily accessible from all parts of Coimbatore. Ample parking available.</p>
+                        </div>
+                        <div class="direction-item">
+                            <h4><i class="fas fa-motorcycle"></i> By Two-Wheeler</h4>
+                            <p>Convenient bike parking for 40 vehicles with secure storage facilities.</p>
+                        </div>
+                        <div class="direction-item">
+                            <h4><i class="fas fa-bus"></i> By Public Transport</h4>
+                            <p>Well-connected by local bus routes. Auto-rickshaws and taxis are readily available.</p>
+                        </div>
+                    </div>
+                    <a href="https://g.co/kgs/YZ33TDk" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-map"></i> Get Directions on Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I book a court?</h3>
+                    <p>You can book a court by calling us at +91 89258 93094, sending us an enquiry through the form above, or visiting our facility directly.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What are your operating hours?</h3>
+                    <p>We are open daily from 5 AM to 11 PM, including weekends and holidays.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you provide equipment?</h3>
+                    <p>Yes, we provide basic equipment for rent. You can also bring your own equipment if preferred.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is parking available?</h3>
+                    <p>Yes, we have parking for 15 cars and 40 bikes with secure storage facilities.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I book for events?</h3>
+                    <p>Yes, we host corporate events and family outings. Contact us for customized packages and pricing.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer coaching?</h3>
+                    <p>Yes, we offer professional coaching for both badminton and pickleball through our partnership with Padukone Sports Management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Sports Journey?</h2>
+                <p>Contact us today and experience elite indoor sports at ST Sportz!</p>
+                <div class="cta-buttons">
+                    <a href="#enquiry-form" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/optimized/PNG/LOGO/Red-white.png" alt="ST Sportz Logo" class="footer-logo">
+                    <p>Premier indoor sports facility in Coimbatore offering world-class badminton and pickleball courts with professional training programs.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="badminton.html">Badminton</a></li>
+                        <li><a href="pickleball.html">Pickleball</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 89258 93094</p>
+                    <p><i class="fas fa-envelope"></i> contactstsportz@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> 5 AM - 11 PM Daily</p>
+                    <p><i class="fas fa-map-marker-alt"></i> KNG Pudur, Coimbatore</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Download</h3>
+                    <a href="Brochure.pdf" download class="btn btn-outline">
+                        <i class="fas fa-download"></i> Download Brochure
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ST Sportz. All rights reserved.</p>
+                <p style="font-size: 0.8rem; color: #9ca3af; margin-top: 0.5rem;">Subsidiary brand of Senthil Tech Innovations Private Limited (CIN: U72900TZ2022PTC040300)</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="usage.html">Usage Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918925893094?text=Hi, I'm interested in booking a court at ST Sportz" 
+       target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

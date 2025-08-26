@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Mobile Responsiveness Test - ST Sportz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .test-section {
+            padding: 2rem;
+            border: 2px solid #ddd;
+            margin: 1rem 0;
+            border-radius: 10px;
+        }
+        .test-title {
+            color: #dc2626;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .device-info {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; color: #dc2626; margin: 2rem 0;">Mobile Responsiveness Test</h1>
+        
+        <div class="test-section">
+            <h2 class="test-title">Device Information</h2>
+            <div class="device-info">
+                <p><strong>Screen Width:</strong> <span id="screen-width"></span>px</p>
+                <p><strong>Screen Height:</strong> <span id="screen-height"></span>px</p>
+                <p><strong>Viewport Width:</strong> <span id="viewport-width"></span>px</p>
+                <p><strong>Viewport Height:</strong> <span id="viewport-height"></span>px</p>
+                <p><strong>Device Pixel Ratio:</strong> <span id="pixel-ratio"></span></p>
+                <p><strong>User Agent:</strong> <span id="user-agent"></span></p>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2 class="test-title">Navigation Test</h2>
+            <header class="header">
+                <nav class="navbar">
+                    <div class="nav-container">
+                        <div class="nav-logo">
+                            <a href="index.html">
+                                <img src="images/optimized/PNG/LOGO/Red-black.png" alt="ST Sportz Logo" class="logo">
+                            </a>
+                        </div>
+                        <ul class="nav-menu">
+                            <li><a href="index.html" class="nav-link active">Home</a></li>
+                            <li><a href="badminton.html" class="nav-link">Badminton</a></li>
+                            <li><a href="pickleball.html" class="nav-link">Pickleball</a></li>
+                            <li><a href="membership.html" class="nav-link">Membership</a></li>
+                            <li><a href="events.html" class="nav-link">Events</a></li>
+                            <li><a href="about.html" class="nav-link">About</a></li>
+                            <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="test-section">
+            <h2 class="test-title">Button Test</h2>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="#" class="btn btn-primary">Primary Button</a>
+                <a href="#" class="btn btn-secondary">Secondary Button</a>
+                <a href="#" class="btn btn-outline">Outline Button</a>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2 class="test-title">Form Test</h2>
+            <form style="max-width: 400px;">
+                <div class="form-group">
+                    <label for="test-name">Name</label>
+                    <input type="text" id="test-name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="test-phone">Phone</label>
+                    <input type="tel" id="test-phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="test-email">Email</label>
+                    <input type="email" id="test-email" placeholder="Enter your email">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="test-section">
+            <h2 class="test-title">Grid Test</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fan"></i>
+                    </div>
+                    <h3>Feature 1</h3>
+                    <p>This is a test feature card to check mobile responsiveness.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3>Feature 2</h3>
+                    <p>This is a test feature card to check mobile responsiveness.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <h3>Feature 3</h3>
+                    <p>This is a test feature card to check mobile responsiveness.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2 class="test-title">WhatsApp Button Test</h2>
+            <a href="https://wa.me/918925893094" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <p>WhatsApp button should be visible in bottom-right corner</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Display device information
+        document.getElementById('screen-width').textContent = screen.width;
+        document.getElementById('screen-height').textContent = screen.height;
+        document.getElementById('viewport-width').textContent = window.innerWidth;
+        document.getElementById('viewport-height').textContent = window.innerHeight;
+        document.getElementById('pixel-ratio').textContent = window.devicePixelRatio;
+        document.getElementById('user-agent').textContent = navigator.userAgent;
+
+        // Update on resize
+        window.addEventListener('resize', function() {
+            document.getElementById('viewport-width').textContent = window.innerWidth;
+            document.getElementById('viewport-height').textContent = window.innerHeight;
+        });
+    </script>
+</body>
+</html> 
