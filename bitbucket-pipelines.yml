@@ -16,6 +16,4 @@ pipelines:
             - apk update
             - apk add --no-cache openssh-client bash
             - scp -o StrictHostKeyChecking=no -r ./ $EC2_USER@$EC2_HOST:$PROJECT_PATH
-            - ssh -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST << 'EOF'
-                sudo systemctl restart nginx
-              EOF
+            - ssh -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST "systemctl restart nginx"
