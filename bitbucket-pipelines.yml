@@ -6,6 +6,11 @@ pipelines:
       - step:
           name: Deploy Main Branch to Prod Server
           deployment: production
+          runs-on: 
+            - linux
+            - self.hosted
+            - stsportz
+            - prod
           script:
             - echo "Deploying build to EC2..."
             - scp -o StrictHostKeyChecking=no -r / $EC2_USER@$EC2_HOST:$PROJECT_PATH
