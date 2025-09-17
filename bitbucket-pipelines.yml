@@ -13,7 +13,9 @@ pipelines:
             - prod
           script:
             - echo "Deploying build to EC2..."
-            - scp -o StrictHostKeyChecking=no -r / $EC2_USER@$EC2_HOST:$PROJECT_PATH
+            - apk update 
+            - apk add openssh scp 
+            - scp -o StrictHostKeyChecking=no -r ./ $EC2_USER@$EC2_HOST:$PROJECT_PATH
             - ssh -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST << 'EOF'
                 sudo systemctl restart nginx
               EOF
