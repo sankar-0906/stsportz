@@ -1,0 +1,14 @@
+image: node:18-alpine
+
+pipelines:
+  branches:
+    main:
+      - step:
+          name: Deploy Main Branch to Prod Server
+          deployment: production
+          script:
+            - echo "Deploying build to EC2..."
+            - scp -o StrictHostKeyChecking=no -r / $EC2_USER@$EC2_HOST:$PROJECT_PATH
+            - ssh -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST << 'EOF'
+                sudo systemctl restart nginx
+              EOF
