@@ -1549,6 +1549,10 @@ html {
     line-height: 1.6;
 }
 
+.fa-map{
+    margin-right: 10px;
+}
+
 /* Contact FAQ Section */
 .contact-faq {
     padding: 5rem 0;
